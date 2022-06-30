@@ -1,7 +1,7 @@
 <template>
 <div className="chat theme-lysnake">
   <div v-for="msg in msgViewer" v-bind:key="msg.id">
-    <Message :msgViewer='msg' :colorBadge="this.colorBadge" :logoBadge="this.logoBadge"/>
+    <Message :msgViewer='msg' :colorBadge="msg.colorBadge" :logoBadge="msg.logoBadge"/>
   </div>
 </div>
 </template>
@@ -19,8 +19,6 @@ export default {
   },
   data() {
     return {
-      colorBadge: String,
-      logoBadge: String,
       msgViewer: [],
     };
   },
@@ -50,19 +48,15 @@ export default {
 
       msg.message = parse(msg.message, msg.emotes, options);
 
-      var tempMsg = msg
-
-      this.colorBadge = "";
-      this.logoBadge = "";
-      if (tempMsg.badges?.broadcaster) {
-        this.colorBadge = "color: #ff0000";
-        this.logoBadge = "https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1";
-      } else if (tempMsg.badges?.moderator) {
-        this.colorBadge = "color: #00AD03";
-        this.logoBadge = "https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1";
-      } else if (tempMsg.badges?.vip) {
-        this.colorBadge = "color: #E005B9";
-        this.logoBadge = "https://static-cdn.jtvnw.net/badges/v1/b817aba4-fad8-49e2-b88a-7cc744dfa6ec/1";
+      if (msg.badges?.broadcaster) {
+        msg.colorBadge = "color: #ff0000";
+        msg.logoBadge = "https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1";
+      } else if (msg.badges?.moderator) {
+        msg.colorBadge = "color: #00AD03";
+        msg.logoBadge = "https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1";
+      } else if (msg.badges?.vip) {
+        msg.colorBadge = "color: #E005B9";
+        msg.logoBadge = "https://static-cdn.jtvnw.net/badges/v1/b817aba4-fad8-49e2-b88a-7cc744dfa6ec/1";
       }
       this.msgViewer.push(msg);
     });

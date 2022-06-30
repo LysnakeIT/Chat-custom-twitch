@@ -9,7 +9,9 @@
         <img :src="logoBadge">
       </h1>
       <hr className="Terminal_barreTerminal">
-      <div className="message">{{msgViewer.message}}</div>
+      <div className="message">
+        <div v-html="msgViewer.message"></div>
+      </div>
     </div>
   </div>
 </section>
