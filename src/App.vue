@@ -1,5 +1,5 @@
 <template>
-<div className="chat theme-lysnake">
+<div class="chat theme-lysnake">
   <div v-for="msg in msgViewer" v-bind:key="msg.id">
     <Message :msgViewer='msg' :colorBadge="msg.colorBadge" :logoBadge="msg.logoBadge"/>
   </div>

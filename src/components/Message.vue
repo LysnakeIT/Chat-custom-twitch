@@ -1,15 +1,15 @@
 <template>
-<section className="Terminal">
-  <div className="Terminal_boiteTerminal">
-    <div className="Terminal_boutonVert"></div>
-    <div className="Terminal_boutonJaune"></div>
-    <div className="Terminal_boutonRouge"></div>
-    <div className="Terminal_boiteDsBoite">
-      <h1 className="Terminal_title" :style="colorBadge">{{msgViewer.username}}
-        <img :src="logoBadge">
+<section class="Terminal">
+  <div class="Terminal_boiteTerminal">
+    <div class="Terminal_boutonVert"></div>
+    <div class="Terminal_boutonJaune"></div>
+    <div class="Terminal_boutonRouge"></div>
+    <div class="Terminal_boiteDsBoite">
+      <h1 class="Terminal_title" :style="colorBadge">{{msgViewer.username}}
+        <img class="Terminal_title_badge" :src="logoBadge">
       </h1>
-      <hr className="Terminal_barreTerminal">
-      <div className="message">
+      <hr class="Terminal_barreTerminal">
+      <div class="message">
         <div v-html="msgViewer.message"></div>
       </div>
     </div>
@@ -100,11 +100,12 @@ export default {
   color: white;
 }
 
-img {
+.Terminal_title_badge {
   height: auto;
   vertical-align: calc(10% - 6px);
   margin: 0 4px;
   border-radius: 50%;
+  width: unset !important;
 }
 
 .Terminal_barreTerminal {
@@ -126,5 +127,13 @@ img {
   max-width: 100%;
   vertical-align: baseline;
   line-height: 1.4;
+}
+
+img {
+  width: 24px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle !important;
+  margin: 0 4px !important;
 }
 </style>
