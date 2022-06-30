@@ -23,7 +23,6 @@
 
 Il suffit de récupérer le lien et de créer une source navigation sur son Obs studio, ensuite le chat apparaitra.
 
-<br>
 
 # Project setup
 ```
