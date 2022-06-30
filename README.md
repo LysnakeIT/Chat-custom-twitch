@@ -2,7 +2,7 @@
   <br>
   <img src="https://cdn.pixabay.com/photo/2021/12/10/16/38/twitch-6860918_960_720.png" alt="Custom-Chat-Twitch" width="200"></a>
   <br>
-  Custom-Chat-Twitch
+  Chat-custom-twitch
   <br>
 </h1>
 
