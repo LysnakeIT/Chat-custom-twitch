@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style>
-
 @keyframes pop {
   0% {
     opacity: 0;
@@ -125,12 +124,5 @@ img {
   max-width: 100%;
   vertical-align: baseline;
   line-height: 1.4;
-}
-  
-img {
-  width: 24px;
-  height: auto;
-  vertical-align: middle;
-  margin: 0 4px;
 }
 </style>
