@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/LysnakeIT/Todo-App/main/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" alt="Custom-Chat-Twitch" width="200"></a>
+  <img src="https://cdn.pixabay.com/photo/2021/12/10/16/38/twitch-6860918_960_720.png" alt="Custom-Chat-Twitch" width="200"></a>
   <br>
   Custom-Chat-Twitch
   <br>
@@ -17,7 +17,7 @@
  </a>
 </p>
 
-![screenshot](https://cdn.discordapp.com/attachments/549725542895845380/953607462827749446/capture_ecran_app.png)
+![screenshot](https://cdn.discordapp.com/attachments/764412536685723648/992124967179255899/unknown.png)
 
 # Informations générales
 
