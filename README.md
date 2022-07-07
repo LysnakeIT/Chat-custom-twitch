@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://cdn.pixabay.com/photo/2021/12/10/16/38/twitch-6860918_960_720.png" alt="Custom-Chat-Twitch" width="200"></a>
+  <img src="https://cdn.discordapp.com/attachments/764412536685723648/994703901246902312/logo.png" alt="Custom-Chat-Twitch" width="200"></a>
   <br>
   Chat-custom-twitch
   <br>
